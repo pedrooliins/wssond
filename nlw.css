@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(https://user-images.githubusercontent.com/26748614/112760946-182a8300-8ff9-11eb-9881-8ca96150852e.jpg) 100% 100% /140%;
+  animation: bg 25s linear infinite paused;
+}
+
+.bg {
+width: 100%;
+height: 100vh;
+background: linear-gradient(to right, #EE7752, #E73C7E, #23A6D5, #23D5AB, yellow);
+background-size: 400% 100%;
+animation: bg 20s infinite;
+}
+
+@keyframes bg {
+0% {
+    background-position: 0% 50%;
+}
+
+50% {
+    background-position: 100% 50%;
+}
+
+100% {
+    background-position: 0% 50%;
+}
+}
+
+/* === SVG === */
+svg {
+display:block;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+height: 100vh;
+}
+
+svg polygon {
+position: absolute;
+}
+
+svg polygon.center {
+opacity:0.7;
+cursor: pointer;
+transition: opacity 0.3s;
+}
+
+svg polygon.center:hover {
+opacity:0.2;
+}
+
+#startText {
+font-family: 'Turret Road', cursive;
+font-weight: 700;
+fill:#fff;
+user-select: none;
+pointer-events: none;
+}
+
+#restartText {
+font-family: 'Turret Road', cursive;
+font-weight: 700;
+fill:rgb(255, 255, 255);
+user-select: none;
+pointer-events: none;
+opacity: 200;
+}
+h1 {
+  position:absolute;
+  background-color: rgba(0,0,0,0.5);
+  color:rgb(255, 255, 255);
+  text-align: center;
+  top: 10px;
+  left: 450px;
+  width: 280px;
+  height: 50px;
+}
+nav {
+  position:absolute;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  top: 120px;
+  left: 450px;
+  width: 280px;
+  height: 50px;
+
+}
+.button { background-color: rgba(255, 255, 255, 0.442); height: 3.5rem; display: inline-flex; align-items: center; padding: 0 2rem; border-radius: 0.25rem; transition: background 0.2s;}
+.button:hover {background-color: aqua;}
+
+.text {
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 16px;
+  }
+}
